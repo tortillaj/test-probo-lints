@@ -4,7 +4,7 @@ steps:
     command: 'sudo npm cache clean -f ; sudo npm install -g n ; sudo n 5.6.0 ; sudo ln -sf /usr/local/n/versions/node/5.6.0/bin/node /usr/bin/node'
   - name: Install deps
     plugin: Shell
-    command: 'npm install -g stylelint ; npm install stylelint-config-standard'
+    command: 'npm install -g stylelint ; npm install'
   - name: Lint CSS
     plugin: Shell
     command: 'stylelint style.css'
