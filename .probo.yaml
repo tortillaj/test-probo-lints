@@ -1,0 +1,4 @@
+steps:
+  - name: Lint CSS
+    plugin: Shell
+    command: 'npm install -g stylelint ; npm install stylelint-config-standard ; stylelint style.css'
