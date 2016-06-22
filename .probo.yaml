@@ -1,4 +1,7 @@
 steps:
+  - name: Install deps
+    plugin: Shell
+    command: 'npm install -g stylelint ; npm install stylelint-config-standard'
   - name: Lint CSS
     plugin: Shell
-    command: 'npm install -g stylelint ; npm install stylelint-config-standard ; stylelint style.css'
+    command: 'stylelint style.css'
