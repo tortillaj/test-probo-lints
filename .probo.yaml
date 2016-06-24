@@ -4,4 +4,4 @@ steps:
   - name: Install deps
     command: 'cd $SRC_DIR && npm install'
   - name: Lint CSS
-    command: 'cd $SRC_DIR && ./node_modules/.bin/stylelint "./$SRC_DIR/css/*.css"'
+    command: 'cd $SRC_DIR && ./node_modules/.bin/stylelint "./css/*.css"'
