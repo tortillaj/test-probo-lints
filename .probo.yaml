@@ -2,6 +2,6 @@ steps:
   - name: Update NodeJS and npm
     command: 'sudo npm cache clean -f ; sudo npm install -g n ; sudo n 5.6.0 ; sudo ln -sf /usr/local/n/versions/node/5.6.0/bin/node /usr/bin/node'
   - name: Install deps
-    command: 'cd $SRC_DIR ; npm install -g stylelint ; npm install'
+    command: 'npm install'
   - name: Lint CSS
-    command: 'ls ; cd $SRC_DIR ; ./node_modules/.bin/stylelint "./css/*.css"'
+    command: './node_modules/.bin/stylelint "./$SRC_DIR/css/*.css"'
