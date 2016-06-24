@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tortillaj/test-probo-lints#readme",
   "dependencies": {
+    "eslint": "^2.13.1",
     "stylelint": "^6.7.0",
     "stylelint-config-standard": "^9.0.0"
   }
