@@ -6,4 +6,4 @@ steps:
   - name: Lint CSS
     command: 'cd $SRC_DIR && ./node_modules/.bin/stylelint "./css/*.css"'
   - name: Lint JS
-    command: 'cd $SRC_DIR && ./node_modules/.bin/eslint js'
+    command: 'cd $SRC_DIR && ./node_modules/.bin/eslint js --color'
